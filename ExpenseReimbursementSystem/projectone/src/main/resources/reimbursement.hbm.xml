@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="projectone.model.Reimbursement" table="reimbursement">
+
+
+		<id name="reimbursementid" type="int" column="reimbursementid">
+			<generator class="native" />
+		</id>
+
+		<property name="reimbursementId" column="reimbursementid" type="int" />
+		<property name="accepted" column="accepted" type="boolean" />
+		<property name="amount" column="amount" type="float" />
+		<property name="description" column="description" type="string" />
+		<property name="reimbursementType" column="reimbursementtype" type="string" />
+		<property name="resolveTime" column="resolvetime" type="string" />
+		<property name="resolved" column="resolved" type="boolean" />
+		<property name="submitTime" column="submittime" type="string" />
+		<property name="authorId" column="authorid" type="int" />
+		<property name="resolverId" column="resolverid" type="int" />
+		
+	</class>
+
+
+</hibernate-mapping>

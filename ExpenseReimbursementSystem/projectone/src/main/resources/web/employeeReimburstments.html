@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reimbursements</title>
+    <link rel="stylesheet" href="css/reimbursements.css">
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+    <div id="reimbursement-container">
+        <table border= "5" id="pending-table">
+            <TR>
+                <TH COLSPAN="10"><BR><H3>Pending Reimbursements</H3>
+                </TH>
+             </TR>
+            <tr>
+                <th>Reimbursement Id</th>
+                <th>Accepted?</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Reimbursement Type</th>
+                <th>Resolve time</th>
+                <th>Resolved</th>
+                <th>Submit Time</th>
+                <th>Author Id</th>
+                <th>Resolver Id</th>
+            </tr>
+                <tbody id="pending-body">
+                </tbody>
+        </table>  
+        <table border= "5" id="resolved-table">
+            <TR>
+                <TH COLSPAN="10"><BR><H3>Resolved Reimbursements</H3>
+                </TH>
+             </TR>
+            <tr>
+                <th>Reimbursement Id</th>
+                <th>Accepted</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Reimbursement Type</th>
+                <th>Resolve Time</th>
+                <th>Resolved</th>
+                <th>Submit time</th>
+                <th>Author Id</th>
+                <th>Resolver Id</th>
+            </tr>
+                <tbody id="resolved-body">
+                </tbody>
+        </table>  
+        
+    </div>
+    <script src="js/employee.js"></script>
+</body>
+</html>

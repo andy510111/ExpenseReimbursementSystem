@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+    <h1>Your information:</h1>
+    <div id="personal-container">
+        <form id="update-form" action="update" method="post">
+            <label for="email">Email:</label>
+            <input id="emailInput" name="email" type="text" required><br>
+
+            <label for="firstname">Firstname:</label>
+            <input id="firstName" name="firstname" type="text" required><br>
+
+            <label for="lastname">Lastname:</label>
+            <input id="lastName" name="lastname" type="text" required><br>
+
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="text" required><br>
+
+            <label for="username">Username:</label>
+            <input id="username" name="username" type="text" required><br>
+            <input id="info-submit" type="submit" value="Edit">
+            <button id="cancel-infoButton" class="viewpageBt">Cancel</button>
+        </form>
+    </div>
+</body>
+<script src="js/personalInfo.js"></script>
+</html>

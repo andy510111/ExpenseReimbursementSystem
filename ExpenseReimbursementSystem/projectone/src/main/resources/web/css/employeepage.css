@@ -1,0 +1,24 @@
+#employee-title {
+    text-align: center;
+}
+
+#employee-container {
+    text-align: center;
+}
+
+.employeeButtons {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+#inner-con {
+    max-width: 300px;
+    margin:auto;
+    border: solid;
+    border-radius: 10px;
+    ;
+}

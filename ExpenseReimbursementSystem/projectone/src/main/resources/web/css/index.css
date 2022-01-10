@@ -1,0 +1,13 @@
+#title-reim {
+    text-align: center;
+}
+
+#parent-container {
+    text-align: center;
+    margin:auto;
+    width: auto;
+}
+
+.submit {
+    cursor: pointer;
+}

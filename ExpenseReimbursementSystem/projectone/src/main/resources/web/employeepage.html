@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/employeepage.css">
+  </head>
+  <body>
+      <h1 id="employee-title">Employee Page</h1>
+      <hr/>
+      <div id="employee-container">
+          <span><a href="./employeeReimburstments.html">View Reimbursements</a></span>
+          <span><a href="./viewinfo.html">Account Information</a></span>
+          <div id="inner-con"> 
+            <h3>Reimbursement Form:</h3>
+            <form id="reimbursement-form" action="reimbursement" method="post">
+              <label class="form" for="reimbursement-type">Reimbursement Type</label>
+              <select class="form" name="reimbursement-type" id="reimbursement-type">
+                <option value="business">Business</option>
+                <option value="commute">Commute</option>
+                <option value="entertainment">Entertainment</option>
+              </select>
+            </br>
+            <label for="description-area" required>Description</label>
+            <textarea class="form" id="description-area" name="description-area"></textarea><br>
+            <label for="amount">Amount:</label>
+            <input class="form" name="amount" type="number" min="1" step="any" required/><br>
+            <input class="employeeButtons" id="submitBt" type="submit" value="Submit">
+            <span><button class="employeeButtons" id="logout-button">Logout</button></span>
+          </form>
+        </div>
+      </div>
+      <script type="module" src="/js/employee.js"></script>
+      <script src=/js/login.js></script>
+      <script src="/js/logout.js"></script>
+  </body>
+</html>

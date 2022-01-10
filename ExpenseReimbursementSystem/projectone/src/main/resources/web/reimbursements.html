@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reimbursements</title>
+    <link rel="stylesheet" href="css/reimbursements.css">
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+    <div id="reimbursement-container">
+        <div class="inner-container">
+        <table border= "5" id="pending-table">
+            <TR>
+                <TH COLSPAN="10"><BR><H3>Pending Reimbursements</H3>
+                </TH>
+             </TR>
+            <tr>
+                <th>Reimbursement Id</th>
+                <th>Accepted</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Reimbursement Type</th>
+                <th>Resolve Time</th>
+                <th>Resolved</th>
+                <th>Submit Time</th>
+                <th>Author Id</th>
+                <th>Resolver Id</th>
+            </tr>
+                <tbody id="pending-body">
+                </tbody>
+        </table>  
+        <table border= "5" id="resolved-table">
+            <TR>
+                <TH COLSPAN="10"><BR><H3>Resolved Reimbursements</H3>
+                </TH>
+             </TR>
+            <tr>
+                <th>Reimbursement Id</th>
+                <th>Accept?</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Reimbursement Type</th>
+                <th>Resolve Time</th>
+                <th>Resolved</th>
+                <th>Submit time</th>
+                <th>Author Id</th>
+                <th>Resolver Id</th>
+            </tr>
+                <tbody id="resolved-body">
+                </tbody>
+        </table>   
+        </div> 
+        <div id="right-container" class="inner-container">
+            <h3>Please select the reimbursement you would like to approve/deny</h3>
+            <form id="updating-pendingForms" action="pendingForms" method="post">
+                <select name="reimbursement-id" id="reimbursement-id">
+                </select>
+                <select name="reimbursement-option" id="reimbursement-option">
+                    <option value="true">Approve</option>
+                    <option value="false">Deny</option>
+                </select>
+                <input type="submit" value="Submit">
+                <input id = "reim-button" type="button" value="Cancel">
+            </form>
+        </div>
+    </div>
+    <script src="js/reimbursements.js"></script>
+    <script src="js/employee.js"></script>
+</body>
+</html>
